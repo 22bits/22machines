@@ -1,6 +1,8 @@
 # 22machines
 
   Sistema modular electromecánico de generación y activación sonora, derivado de Tutupá drum machine, y desarrollado en Chile por Bárbara Molina y Matías Serrano. Todos los módulos se comunican a través de pulsos de 5v, y son alimentados por fuentes DC de 9 a 12v. 
+  
+  Únete a nuestra comunidad de experimentación en [Facebook!](https://www.facebook.com/groups/442825269573096/) 
 
   ### C01-SEQ
 
@@ -18,7 +20,7 @@
 
     Convierte un pulso en una señal de 12V, de longitud variable. Permite utilizar cargas de 12V, como tiras LED.
   
-  ### [C05-22mini](hhttps://github.com/22bits/22machines/tree/master/C05-22mini) 
+  ### [C05-22mini](https://github.com/22bits/22machines/tree/master/C05-22mini) 
 
     Drum machine mecánica, controladora de servos de 2 pasos y 8 pistas,  utilizada en talleres de introducción al sistema 22machines.
 
