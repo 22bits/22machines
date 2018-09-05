@@ -4,19 +4,29 @@
 // Comment the following line if the whole hardware is available (Clock In, Out, Speed control).
 // #define MINIMAL_HARDWARE
 // Comment the following line to disable servo output and have a standard pulse instead.
-// #define SERVO_OUTPUT
-// This setting optionally inverts the output when SERVO_OUTPUT is not defined. INVERTED OUTPUT = POSITIVE PULSES
- #define INVERTED_OUTPUT
+#define SERVO_OUTPUT
+// This setting optionally inverts the output when SERVO_OUTPUT is not defined
+// #define INVERTED_OUTPUT
+// Uncomment the following line for a 22 mini
+#define _22_MINI
 
 // *******************************************************************************
 // **                                                                           **
 // **        C O N S T A N T S   &   P I N / B U T T O N   M A P P I N G        **
 // **                                                                           **
 // *******************************************************************************
+#ifdef _22_MINI
+const byte TOTAL_BUTTONS          = 8; // Connected to 4021
+const byte TOTAL_STEPS            = 8;
+const byte TOTAL_TRACKS           = 2;
+const byte LED_MATRIX_BRIGHTNESS  = 1;
+#else
 const byte TOTAL_BUTTONS          = 16;
 const byte TOTAL_STEPS            = 16;
-const byte TOTAL_STEP_COLS        = TOTAL_STEPS/2;
 const byte TOTAL_TRACKS           = 4;
+#endif
+
+const byte TOTAL_STEP_COLS        = TOTAL_STEPS/2;
 const int  MIN_STEP_TIME          = 100;
 const int  MAX_STEP_TIME          = 1000;
 const int  RESET_PRESS_TIME       = 1000;
@@ -43,19 +53,27 @@ const byte SERVO_INCREMENT        = 4;
 #define sync_clock_out        A3
 #define mtx_intensity_in      A1
 
-#define CLOCK_IN_THRESHOLD    200  // A value from 0 to 1023, which represents the range from 0 to VCC
-
 // Output pins ----------------------
+#ifdef _22_MINI
+const int outputPin[TOTAL_TRACKS]        = { 13, 12};
+#else
 const int outputPin[TOTAL_TRACKS]        = { 13, 12, 11, 10};
+#endif
 
 // Button mapping (4021) ------------
+#ifdef _22_MINI
+const byte step_buttons[TOTAL_STEP_COLS] = { 1, 2, 3, 5};
+const byte track_buttons[TOTAL_TRACKS]   = { 0, 4};
+const byte MUTE_BUTTON                   = 7;
+const byte PAGE_SEL_BUTTON               = 6;
+const byte PLAY_BUTTON_PIN               = 2;
+#else
 const byte step_buttons[TOTAL_STEP_COLS] = { 9, 10, 11, 7, 6, 5, 4, 0};
 const byte track_buttons[TOTAL_TRACKS]   = { 8, 12, 13, 14};
 const byte PLAY_BUTTON                   = 2;
 const byte PAGE_SEL_BUTTON               = 1;
 const byte MUTE_BUTTON                   = 15;
-
-
+#endif
 //                            G  C  E  DP D  F [A, B (Unconnected)]
 const byte LED_ROW_REMAP[] = {7, 3, 5, 0, 4, 6, 1, 2};
 //                           D1  D5 D7 D3 D2 D7 D4 D0
@@ -64,15 +82,25 @@ const byte LED_COL_REMAP[] = {1, 5, 7, 3, 2, 6, 4, 0};
 const byte OFFBEAT_LED_ROW = 6; // SEG_A: Check previous mapping.
 const byte OFFBEAT_LED_COL = 0; // DIG_1: Check previous mapping.
 
+#ifdef _22_MINI
+const byte REF_LED_ROW = 4;
+#else
+const byte REF_LED_ROW = TOTAL_TRACKS;
+#endif
+
 // *******************************************************************************
 // **                                                                           **
 // **                      D A T A   D E C L A R A T I O N S                    **
 // **                                                                           **
 // *******************************************************************************
 const byte TOTAL_BBYTES   = (TOTAL_BUTTONS + (8 - (TOTAL_BUTTONS % 8))) / 8;
-
 byte buttonData[TOTAL_BBYTES];
 byte prevBttnData[TOTAL_BBYTES];
+#ifdef _22_MINI
+boolean miniPlayBttnData = false;
+boolean miniPlayBttnPrevData = false;
+#endif
+
 word stepData[TOTAL_TRACKS];
 bool isTrackActive[TOTAL_TRACKS];
 bool isStepActive[TOTAL_STEPS];
@@ -110,6 +138,30 @@ boolean getButtonReleased (byte b){
   return !getButtonPressed(b) && (getButtonPrevPressed(b));
 }
 
+boolean getPlayButtonHit (){
+#ifdef _22_MINI
+  return miniPlayBttnData && !miniPlayBttnPrevData;
+#else
+  getButtonHit(PLAY_BUTTON);
+#endif
+}
+
+boolean getPlayButtonPressed (){
+#ifdef _22_MINI
+  return miniPlayBttnData;
+#else
+  getButtonPressed(PLAY_BUTTON);
+#endif
+}
+
+boolean getPlayButtonReleased (){
+#ifdef _22_MINI
+  return !miniPlayBttnData && miniPlayBttnPrevData;
+#else
+  getButtonReleased(PLAY_BUTTON);
+#endif
+}
+
 void setButton (byte b, boolean val) {
   if (b >= TOTAL_BUTTONS) return;
   if (val) {
@@ -124,6 +176,10 @@ void readButtons() {
 
   // Keep a record of the previous state of every button
   for (int b =  0; b < TOTAL_BBYTES;  b++) prevBttnData[b] = buttonData[b];
+#ifdef _22_MINI
+  miniPlayBttnPrevData = miniPlayBttnData;
+  miniPlayBttnData = digitalRead(PLAY_BUTTON_PIN);
+#endif
 
   //Pulse the latch pin:
   digitalWrite(bttn_latchPin, 1);
@@ -205,26 +261,35 @@ void refreshStepReferenceRow (){
   if (isStepActive[currentStep] && ((currentStep % 2) == currentSequencePage)) curStepLed = currentStep/2;
 
   for (byte i = 0; i < TOTAL_STEP_COLS; i++) {
-    ledMatrix.setLed(0, LED_COL_REMAP[i], LED_ROW_REMAP[TOTAL_TRACKS], (i == curStepLed));
+    ledMatrix.setLed(0, LED_COL_REMAP[i], LED_ROW_REMAP[REF_LED_ROW], (i == curStepLed));
   }
 }
 
 void showActiveSteps (){
   // We will  show the enabled/active steps using the step reference row
   for (byte i = 0; i < TOTAL_STEP_COLS; i++) {
-    ledMatrix.setLed(0, LED_COL_REMAP[i], LED_ROW_REMAP[TOTAL_TRACKS], isStepActive[i*2 + currentSequencePage]);
+    ledMatrix.setLed(0, LED_COL_REMAP[i], LED_ROW_REMAP[REF_LED_ROW], isStepActive[i*2 + currentSequencePage]);
   }
 }
 
 void displayTrackSelection (byte track, boolean val){
   // The total_tracks+1 rows is an 8 pixel "row" laid out as a column, with 2 LEDs
-  // per track, the first one being the active track indicator, and the second one
-  // if the track is currently muted.
-  ledMatrix.setLed(0, LED_COL_REMAP[track*2], LED_ROW_REMAP[TOTAL_TRACKS+1], val);
+  // per track, the first one being the mute track indicator, and the second one
+  // if the track is currently active.
+  // This mapping is inverted in 22 Mini
+#ifdef _22_MINI
+  ledMatrix.setLed(0, LED_COL_REMAP[track*2], LED_ROW_REMAP[REF_LED_ROW+1], val);
+#else
+  ledMatrix.setLed(0, LED_COL_REMAP[track*2+1], LED_ROW_REMAP[REF_LED_ROW+1], val);
+#endif
 }
 
 void displayTrackEnabled (byte track, boolean enabled){
-  ledMatrix.setLed(0, LED_COL_REMAP[track*2+1], LED_ROW_REMAP[TOTAL_TRACKS+1], !enabled);
+#ifdef _22_MINI
+  ledMatrix.setLed(0, LED_COL_REMAP[track*2+1], LED_ROW_REMAP[REF_LED_ROW+1], !enabled);
+#else
+  ledMatrix.setLed(0, LED_COL_REMAP[track*2], LED_ROW_REMAP[REF_LED_ROW+1], !enabled);
+#endif
 }
 
 void toggleTrackEnabled (byte t){
@@ -424,6 +489,10 @@ void setup() {
   pinMode(mtx_intensity_in, INPUT);
   pinMode(sync_clock_out, OUTPUT);
 
+#ifdef _22_MINI
+  pinMode(PLAY_BUTTON_PIN, OUTPUT);
+#endif
+
   ledMatrix.shutdown (0,false);
   ledMatrix.clearDisplay(0);
 
@@ -470,11 +539,19 @@ void loop() {
 #ifdef MINIMAL_HARDWARE
   stepInterval = MIN_STEP_TIME + (MAX_STEP_TIME - MIN_STEP_TIME)/2;
 #else
-  // Read the speed selection pot
-  stepInterval = map(analogRead(speed_analog_in), 0, 1023, MIN_STEP_TIME, MAX_STEP_TIME);
+  int speedCtrlVal = analogRead(speed_analog_in);
+ #ifdef _22_MINI
+  // Invert the speed control value
+  speedCtrlVal = 1023 - speedCtrlVal;
+  // Hard-coded matrix intensity
+  byte mtxIntensity = LED_MATRIX_BRIGHTNESS;
+ #else
+  // Read the intensity pot
   byte mtxIntensity = map (analogRead(mtx_intensity_in), 0, 1023, 0, 15);
+ #endif
+  // Read the speed selection pot
+  stepInterval = map(speedCtrlVal, 0, 1023, MIN_STEP_TIME, MAX_STEP_TIME);
   ledMatrix.setIntensity (0, mtxIntensity);
-  
 #endif
   // Some operations depend on the state of the mute button.
   muteButtonPressed = getButtonPressed (MUTE_BUTTON);
@@ -512,12 +589,12 @@ void loop() {
 
   // Control buttons ########################
   // Play / Pause / Reset ----
-  if (getButtonReleased(PLAY_BUTTON)) {
+  if (getPlayButtonReleased()) {
       // canReset is set to true when the button is not pressed
     if (canReset) playing = !playing;
-  }else if (getButtonHit(PLAY_BUTTON)){
+  }else if (getPlayButtonHit()){
     playPressedTime = currentTime;
-  }else if (getButtonPressed(PLAY_BUTTON)) {
+  }else if (getPlayButtonPressed()) {
     if ((currentTime - playPressedTime >= RESET_PRESS_TIME) && canReset) {
         // Full reset
         resetSteps ();
