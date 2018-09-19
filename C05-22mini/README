@@ -39,7 +39,7 @@ ___________________________________
 
   Sugerencias al ensamblar:
   
-    - D23 y R18 reducen el voltaje de la entrada de SYNC, no deben soldarse.
+    - D23 y R19 reducen el voltaje de la entrada de SYNC, no deben soldarse.
     - El emisor de Q1 debe ir a GND, por lo que se debe puentear al disipador.
     - Los Condensadores electrolíticos deben ir horizontales para que no interfieran espacialmente con la placa superior. Pueden ir soldados hacia arriba o hacia abajo según criterio de la persona que lo ensamble.
     - Soldar los headers utilizando los separadores como guías, para hacer más sencillo el montaje y desmontaje de las dos placas
