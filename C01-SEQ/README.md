@@ -1,11 +1,10 @@
 
-C05 - 22mini
-(tutumini)
+C01-SEQ
 Diseñada por Colectivo 22bits (http://22bits.org)
 Bárbara Molina & Matías Serrano
 Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
-C05 - 22mini por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+C01-SEQ por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
 
 _______________________
 
