@@ -33,15 +33,15 @@ Con una señal parecida a un trigger, pero ligeramente más compleja, denominada
 ![Image of Servos](https://github.com/22bits/22machines/blob/master/FAQ/images/servos.JPG) 
 >  ###### By <a href="//commons.wikimedia.org/w/index.php?title=User:Hforesti&amp;action=edit&amp;redlink=1" class="new" title="User:Hforesti (page does not exist)">Hforesti</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=3705164">Link</a>
 
-##### ¿Qué es Arduino?
+### ¿Qué es Arduino?
 
 Arduino es un pequeño micro controlador de código abierto, el cuál permite programar instrucciones sencillas en el computador, las cuales son realizadas por la placa de desarrollo, como mover motores, generar triggers, leer botones, encender leds, etc. Existen diversas versiones de la placa, que se diferencian en sus dimensiones y número de pines, pero todas se programan de la misma forma y con el mismo software.
 
-##### ¿Cómo consigo un módulo de 22machines?
+### ¿Cómo consigo un módulo de 22machines?
 
 Por ahora, solo estamos distribuyendo la C05-22mini a través de talleres presenciales, gratuitos o pagados, según la institución que nos apoye. Nos interesa generar comunidad, diálogos sobre tecnología y experimentación de forma presencial. Sígue a Colectivo 22bits en [Facebook](https://www.facebook.com/colectivo22bits/) o [Instagram](http://instagram.com/colectivo22bits) para enterarte de la realización de los talleres.
 
-##### ¿Cómo se financian?
+### ¿Cómo se financian?
 
-Trabajando de manera freelance o part-time en actividades similares o no tanto, y a través de instituciones que nos convocan a realizar talleres, charlas, instalaciones o conciertos. Si trabajas o diriges una de ellas, no dudes en escribirnos a hola@22bits.org para ver como podemos colaborar 😌
+Trabajando de manera freelance o part-time en proyectos similares a nuestra línea de trabajo (o no tanto), y a través de instituciones que nos convocan a realizar talleres, charlas, instalaciones o conciertos. Si trabajas o diriges una de ellas, no dudes en escribirnos a hola@22bits.org para ver como podemos colaborar 😌
 
