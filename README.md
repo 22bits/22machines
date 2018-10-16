@@ -1,6 +1,8 @@
 # 22machines
 
-  Sistema modular electromecánico de generación y activación sonora, derivado de Tutupá drum machine, y desarrollado en Chile por Bárbara Molina y Matías Serrano. Todos los módulos se comunican a través de pulsos de 5v, y son alimentados por fuentes DC de 9 a 12v. 
+  Sistema modular electromecánico de generación y activación sonora, derivado de Tutupá drum machine, y desarrollado en Chile por el [Colectivo 22bits](https://www.22bits.org) (Bárbara Molina y Matías Serrano). 
+  
+  Motivado por un pensamiento tecnofeminista, proponemos replantearnos la tecnología y su incidencia en los cuerpos. Esta plataforma busca promover el bricolaje electrónico en comunidades latinoamericanas, y se propone como una alternativa, desde nuestros materiales y componentes disponibles en esta parte del mundo, al formato Eurorack. Todos los módulos se comunican a través de pulsos de 5v, y son alimentados por fuentes DC de 9 a 12v. Si no entiendes a qué se refiere esto último, ve al apartado de preguntas frecuentes al final de la página.
   
   Únete a nuestra comunidad de experimentación en [Facebook!](https://www.facebook.com/groups/442825269573096/) 
 
