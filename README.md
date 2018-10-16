@@ -25,6 +25,8 @@
   ### [C05-22mini](https://github.com/22bits/22machines/tree/master/C05-22mini) 
 
     Drum machine mecánica, controladora de servos de 2 pasos y 8 pistas,  utilizada en talleres de introducción al sistema 22machines.
+_________________________
 
+ ## [Preguntas Frecuentas](https://github.com/22bits/22machines/tree/master/FAQ)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">22machines</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.22bits.org" property="cc:attributionName" rel="cc:attributionURL">Bárbara Molina & Matías Serrano</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
