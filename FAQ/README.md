@@ -1,4 +1,4 @@
-#22machines F.A.Q.
+# 22machines F.A.Q.
 
 ### ¿Qué es un módulo?
 
@@ -39,5 +39,9 @@ Arduino es un pequeño micro controlador de código abierto, el cuál permite pr
 
 ##### ¿Cómo consigo un módulo de 22machines?
 
-Por ahora, solo estamos distribuyendo
+Por ahora, solo estamos distribuyendo la C05-22mini a través de talleres presenciales, gratuitos o pagados, según la institución que nos apoye. Nos interesa generar comunidad, diálogos sobre tecnología y experimentación de forma presencial. Sígue a Colectivo 22bits en [Facebook](https://www.facebook.com/colectivo22bits/) o [Instagram](http://instagram.com/colectivo22bits) para enterarte de la realización de los talleres.
+
+##### ¿Cómo se financian?
+
+Trabajando de manera freelance o part-time en actividades similares o no tanto, y a través de instituciones que nos convocan a realizar talleres, charlas, instalaciones o conciertos. Si trabajas o diriges una de ellas, no dudes en escribirnos a hola@22bits.org para ver como podemos colaborar 😌
 
