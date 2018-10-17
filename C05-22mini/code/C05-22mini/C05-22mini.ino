@@ -1,6 +1,17 @@
 #include "LedControl.h"
 #include <Servo.h>
 
+//C05 - 22mini
+//(tutumini)
+//Diseñada por Colectivo 22bits (http://22bits.org)
+//Bárbara Molina & Matías Serrano
+//Programada por Elías Zacarías (http://blog.damnsoft.org/)
+
+// 22machines, por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+// Colectivo 22bits promueve cualquier tipo de modificación y hackeo a la máquina, no así el uso comercial que se le pueda dar sin expresa autorización de sus creadores. 
+// Si te fabricas una, la utilizas en tu set, o la usas para algo nuevo, haznos saber y te compartiremos (si te parece) :)
+
+
 // Comment the following line if the whole hardware is available (Clock In, Out, Speed control).
 // #define MINIMAL_HARDWARE
 // Comment the following line to disable servo output and have a standard pulse instead.
