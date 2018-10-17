@@ -1657,9 +1657,9 @@ Wire Wire Line
 Wire Wire Line
 	6150 6050 6150 6850
 Wire Wire Line
-	8300 6850 6150 6850
+	6150 6850 8300 6850
 Wire Wire Line
-	8300 5750 8300 6850
+	8300 6850 8300 5750
 Wire Wire Line
 	8300 5750 9400 5750
 Wire Wire Line
@@ -1667,9 +1667,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 6150 6250 6750
 Wire Wire Line
-	7900 6750 6250 6750
+	6250 6750 7900 6750
 Wire Wire Line
-	7900 5850 7900 6750
+	7900 6750 7900 5850
 Wire Wire Line
 	7900 5850 9400 5850
 Wire Wire Line
@@ -1807,9 +1807,9 @@ Wire Wire Line
 Wire Wire Line
 	11100 5750 11100 6100
 Wire Wire Line
-	14300 6100 11100 6100
+	11100 6100 14300 6100
 Wire Wire Line
-	14300 4450 14300 6100
+	14300 6100 14300 4450
 Wire Wire Line
 	15600 4450 15600 3750
 Wire Wire Line
@@ -2102,4 +2102,5 @@ Connection ~ 17000 5550
 Connection ~ 17000 5450
 Connection ~ 17000 5350
 Connection ~ 17000 5250
+NoConn ~ 2350 1350
 $EndSCHEMATC
