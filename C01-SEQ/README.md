@@ -1,10 +1,11 @@
 
-C01-SEQ
+#C01-SEQ
+
 Diseñada por Colectivo 22bits (http://22bits.org)
 Bárbara Molina & Matías Serrano
 Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
-C01-SEQ por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+
 
 _______________________
 
@@ -21,4 +22,7 @@ C01-SEQ es un secuenciador 4 pistas y 16 pasos, que gatilla señales de trigger 
     - Entrada y salida de Sync no dependientes 
     - Cada máquina puede seleccionar si obedece al pulso externo o al interno a través de un switch
     - Alimentación a través de 9~12V con centro positivo
+    
+    
+C01-SEQ por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.    
     
