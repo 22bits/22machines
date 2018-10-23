@@ -1,7 +1,7 @@
 
 # C03-MULT
 Diseñada por Colectivo 22bits (http://22bits.org)
-o
+
 ___________________________________
 
 C03-MULT es un módulo pasivo (no requiere alimentación), y permite copiar una entrada en otras dos (1x2). Cada módulo es capaz de copiar 4 señales estéreo o mono. 
