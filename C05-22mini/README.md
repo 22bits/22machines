@@ -1,10 +1,9 @@
-C05 - 22mini
+# C05-22mini
 (tutumini)
-Diseñada por Colectivo 22bits (http://22bits.org)
-Bárbara Molina & Matías Serrano
-Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
-C05 - 22mini por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
+##### Diseñada por Colectivo 22bits (http://22bits.org)
+##### Bárbara Molina & Matías Serrano
+##### Programada por Elías Zacarías (http://blog.damnsoft.org/)
 ___________________________________
 
 22mini es una drum machine mecánica de 2 pistas y 8 pasos, donde cada relación entra paso y pista puede activar un servo motor en una acción percusiva.
@@ -48,6 +47,6 @@ ___________________________________
     
  _____________________________
  
+C05 - 22mini por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
  
- 
-Colectivo 22bits promueve cualquier tipo de modificación y hackeo a la máquina, no así el uso comercial que se le pueda dar sin expresa autorización de sus creadores. Si te fabricas una, la utilizas en tu set, o la usas para algo nuevo, haznos saber y te compartiremos en nuestras redes sociales (si te interesA) :)
+Colectivo 22bits promueve cualquier tipo de modificación y hackeo a la máquina, no así el uso comercial que se le pueda dar sin expresa autorización de sus creadores. Si te fabricas una, la utilizas en tu set, o la usas para algo nuevo, haznos saber y te compartiremos en nuestras redes sociales (si te interesa) :)
