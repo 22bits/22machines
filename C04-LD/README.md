@@ -2,9 +2,8 @@
 
 # C04-LD
 
-Diseñada por Colectivo 22bits (http://22bits.org)
-Bárbara Molina & Matías Serrano
-
+##### Diseñada por Colectivo 22bits (http://22bits.org)
+##### Bárbara Molina & Matías Serrano
 _______________________
 
 C04-LED permite activar una carga simple de 12V, y controlar la duración de su pulso a través de los potenciómetros. Puede ser usado para encender luces, activar bombas de agua, ventiladores, etc.
