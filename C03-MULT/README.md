@@ -1,6 +1,9 @@
 
 # C03-MULT
-Diseñada por Colectivo 22bits (http://22bits.org)
+
+##### Diseñada por Colectivo 22bits (http://22bits.org)
+##### Bárbara Molina & Matías Serrano
+
 
 ___________________________________
 
