@@ -5,6 +5,8 @@
   Motivados por un pensamiento tecnofeminista, proponemos replantearnos la tecnología y su incidencia en los cuerpos. Esta plataforma busca promover el bricolaje electrónico en comunidades latinoamericanas, y se propone como una alternativa, desde nuestros materiales y componentes disponibles en esta parte del mundo, al formato Eurorack. Todos los módulos se comunican a través de pulsos de 5v, y son alimentados por fuentes DC de 9 a 12v. Si no entiendes de qué estamos hablando, ve al apartado de preguntas frecuentes al final de la página.
   
   Únete a nuestra comunidad de experimentación en [Facebook!](https://www.facebook.com/groups/442825269573096/) 
+  
+  ![image](https://github.com/22bits/22machines/blob/master/images/system.JPG)
 
   ### [C01-SEQ](https://github.com/22bits/22machines/tree/master/C01-SEQ)
 
