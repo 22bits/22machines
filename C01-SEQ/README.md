@@ -1,5 +1,5 @@
 
-#C01-SEQ
+# C01-SEQ
 
 Diseñada por Colectivo 22bits (http://22bits.org)
 Bárbara Molina & Matías Serrano
