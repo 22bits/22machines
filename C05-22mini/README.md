@@ -8,7 +8,7 @@ ___________________________________
 
 22mini es una drum machine mecánica de 2 pistas y 8 pasos, donde cada relación entra paso y pista puede activar un servo motor en una acción percusiva.
 
-  Especificaciones (1a versión):
+### Especificaciones (1a versión):
 
     - 2 pistas con salidas individuales
     - Hasta 8 pasos por pista
