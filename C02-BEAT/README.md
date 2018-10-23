@@ -2,8 +2,8 @@
 # C02-BEAT
 
 ##### Diseñada por Colectivo 22bits (http://22bits.org)
-  Bárbara Molina & Matías Serrano
-  Programada por Elías Zacarías (http://blog.damnsoft.org/)
+##### Bárbara Molina & Matías Serrano
+##### Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
 _______________________
 
