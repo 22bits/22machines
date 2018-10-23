@@ -20,7 +20,7 @@ ___________________________________
     - Cada máquina puede seleccionar si obedece al pulso externo o al interno a través de un switch
     - Operación a través de 9~12V con centro positivo
     
-  Descripción de funcionamiento
+### Descripción de funcionamiento
   
 22mini está programada en Arduino, la cual lee la información ingresada a través de los botones, lo muestra en la pantalla de LEDS, y activa los servomotores según la secuencia. La velocidad de ésta es dependiente de la perilla de tempo o de la entrada de Sync, que avanza un paso a cada lectura de pulso en Sync IN.
 
@@ -34,7 +34,7 @@ Las salidas están predeterminadas para controlar servomotores en un movimiento 
 
 La alimentación del circuito puede ser de 9 a 12V, con un amperaje de 1A para motores más pequeños (como el SG09)
     
- Modificaciones sugeridas
+### Modificaciones sugeridas
     
    - 22mini está programada exactamente con el mismo código que C01-SEQ, solo varía a través de la línea "#define _22_MINI". Si está comentada, asignará los botones y leds para la versión de 4 pistas y 16 pasos, lo cual puede generar problemas para una 22mini.
    
@@ -44,7 +44,7 @@ La alimentación del circuito puede ser de 9 a 12V, con un amperaje de 1A para m
    
    - Hay pads de la PCB que no incluyen componentes, los cuales están abiertos para agregar variaciones. Estos son 4 pines análogos (A4, A5, A6, A7), uno digital (D3), D10 y D11 para salidas no definidas en el código, TX y RX.  
 
-  Sugerencias al ensamblar:
+### Sugerencias al ensamblar:
   
    - D23 y R19 reducen el voltaje de la entrada de SYNC, no deben soldarse.
    - El emisor de Q1 debe ir a GND, por lo que se debe puentear al disipador.
