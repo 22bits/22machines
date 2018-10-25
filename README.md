@@ -11,18 +11,26 @@
   ### [C01-SEQ](https://github.com/22bits/22machines/tree/master/C01-SEQ)
 
     Secuenciador de 4 pistas y 16 pasos
+    
+  ![image](https://github.com/22bits/22machines/blob/master/images/01seq.png)  
   
   ### [C02-BEAT](https://github.com/22bits/22machines/tree/master/C02-BEAT)
 
     Conversor de trigger a movimiento percusivo de servomotor para 4 pistas
+    
+  ![image](https://github.com/22bits/22machines/blob/master/images/02beat.png)  
   
   ### [C03-MULT](https://github.com/22bits/22machines/tree/master/C03-MULT)
 
     Multiplicador pasivo, permite copiar una señal en otras dos. Cada módulo incluye 4 mults
+    
+  ![image](https://github.com/22bits/22machines/blob/master/images/03mult.png)  
   
-  ### [C04-LD](https://github.com/22bits/22machines/tree/master/C04-LD)
+  ### [C04-LD12](https://github.com/22bits/22machines/tree/master/C04-LD)
 
     Convierte un pulso en una señal de 12V, de longitud variable. Permite utilizar cargas de 12V, como tiras LED.
+    
+  ![image](https://github.com/22bits/22machines/blob/master/images/04ld12.png)  
   
   ### [C05-22mini](https://github.com/22bits/22machines/tree/master/C05-22mini) 
 
