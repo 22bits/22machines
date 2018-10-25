@@ -36,6 +36,8 @@
 
     Drum machine mecánica, controladora de servos de 2 pasos y 8 pistas.
     Utilizada en talleres de introducción al sistema 22machines.
+    
+  ![image](https://github.com/22bits/22machines/blob/master/images/22mini.png) 
 _________________________
 
  ##### [¿? Preguntas frecuentes](https://github.com/22bits/22machines/tree/master/FAQ)
