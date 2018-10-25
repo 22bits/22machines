@@ -40,10 +40,10 @@
   ![image](https://github.com/22bits/22machines/blob/master/images/22mini.png) 
 _________________________
 
- ##### [¿? Preguntas frecuentes](https://github.com/22bits/22machines/tree/master/FAQ)
- 
- ____________________
  
   ![image](https://github.com/22bits/22machines/blob/master/images/servo1.jpg) 
 
+ ### [¿? Preguntas frecuentes](https://github.com/22bits/22machines/tree/master/FAQ)
+ 
+ ____________________
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">22machines</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.22bits.org" property="cc:attributionName" rel="cc:attributionURL">Bárbara Molina & Matías Serrano</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
