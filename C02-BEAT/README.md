@@ -5,6 +5,8 @@
 ##### Bárbara Molina & Matías Serrano
 ##### Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
+¡Esquemático no testeado!
+
 _______________________
 
 C02-BEAT convierte señales de trigger en movimiento percusivo para servomotores
