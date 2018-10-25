@@ -30,7 +30,7 @@
 
     Convierte un pulso en una señal de 12V, de longitud variable. Permite utilizar cargas de 12V, como tiras LED.
     
-  ![image](https://github.com/22bits/22machines/blob/master/images/04ld12.png)  
+  ![image](https://github.com/22bits/22machines/blob/master/images/04LD12.png)  
   
   ### [C05-22mini](https://github.com/22bits/22machines/tree/master/C05-22mini) 
 
