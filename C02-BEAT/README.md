@@ -5,7 +5,7 @@
 ##### Bárbara Molina & Matías Serrano
 ##### Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
-###¡Esquemático no testeado!
+### ¡Esquemático no testeado!
 
 _______________________
 
