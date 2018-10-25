@@ -1,12 +1,12 @@
 
 
-# C04-LD
+# C04-LD12
 
 ##### Diseñada por Colectivo 22bits (http://22bits.org)
 ##### Bárbara Molina & Matías Serrano
 _______________________
 
-C04-LED permite activar una carga simple de 12V, y controlar la duración de su pulso a través de los potenciómetros. Puede ser usado para encender luces, activar bombas de agua, ventiladores, etc.
+C04-LD12 permite activar una carga simple de 12V, y controlar la duración de su pulso a través de los potenciómetros. Puede ser usado para encender luces, activar bombas de agua, ventiladores, etc.
 
   Especificaciones (1a versión):
 
@@ -20,4 +20,4 @@ _________________________
 
 Colectivo 22bits promueve cualquier tipo de modificación y hackeo a la máquina, no así el uso comercial que se le pueda dar sin expresa autorización de sus creadores. Si te fabricas una, la utilizas en tu set, o la usas para algo nuevo, haznos saber y te compartiremos (si lo deseas) en nuestras redes sociales :)    
 
-C04-LD por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional
+C04-LD12 por Bárbara Molina & Matías Serrano se distribuye bajo una Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional
