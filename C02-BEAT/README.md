@@ -5,8 +5,6 @@
 ##### Bárbara Molina & Matías Serrano
 ##### Programada por Elías Zacarías (http://blog.damnsoft.org/)
 
-### ¡Esquemático no testeado!
-
 _______________________
 
 C02-BEAT convierte señales de trigger en movimiento percusivo para servomotores
@@ -14,7 +12,7 @@ C02-BEAT convierte señales de trigger en movimiento percusivo para servomotores
   Especificaciones (1a versión):
 
     - 4 pistas 
-    - Entrada de trigger (5v)
+    - Entrada de trigger (5v) optoacopladas
     - Salidas PWM para servomotor, a través de conectores XLR
     - Control de posición inicial de golpe
     - Alimentación a través de 9~12V con centro positivo
@@ -23,7 +21,6 @@ _______________________
 
 Futuros cambios:
 
-    - Entradas optoacopladas
     - Mejorar acceso a conector de Arduino para modificación de parámetros
     
 _______________________
