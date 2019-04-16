@@ -9,7 +9,7 @@ La salida de 22mini está diseñada para mover servomotores, lo que realiza el a
 
  ![image](https://github.com/22bits/22machines/blob/master/images/22minimod1.png)
  
- 2) Armar el siguiente circuito dos veces con un IRFZ48N o cualquier MOSFET canal-n, un diodo 1n4007, y una resistencia de 220. 
+ 2) Armar el siguiente circuito dos veces con un IRFZ48N o cualquier MOSFET canal-n*, un diodo 1n4007, y una resistencia de 220. 
  
  ![image](https://github.com/22bits/22machines/blob/master/images/22minimod2.png)
  
@@ -17,4 +17,6 @@ La salida de 22mini está diseñada para mover servomotores, lo que realiza el a
  
  4) Conectar tu motor en el OUTPUT
 
- 4) Listo! 22mini moverá tu motor con pequeños pulsos. Para modificar el tiempo de éste, puedes utilizar un circuito con un chip 555 en su configuración monoestable.
+ 5) Listo! 22mini moverá tu motor con pequeños pulsos. Para modificar el tiempo de éste, puedes utilizar un circuito con un chip 555 en su configuración monoestable.
+ 
+ *Acá hay un listado en la tienda HMTECHTRONIC en Santiago con transistores. Cualquier MOSFET canal N de más de 2A funciona.
