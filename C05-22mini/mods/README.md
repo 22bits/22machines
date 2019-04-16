@@ -19,4 +19,4 @@ La salida de 22mini está diseñada para mover servomotores, lo que realiza el a
 
  5) Listo! 22mini moverá tu motor con pequeños pulsos. Para modificar el tiempo de éste, puedes utilizar un circuito con un chip 555 en su configuración monoestable.
  
- *Acá hay un listado en la tienda HMTECHTRONIC en Santiago con transistores. Cualquier MOSFET canal N de más de 2A funciona.
+ *En este [link](http://hmtechtronic.cl/tranmpot.pdf) hay un listado en la tienda HMTECHTRONIC en Santiago con transistores. Cualquier MOSFET canal N de más de 2A funciona.
