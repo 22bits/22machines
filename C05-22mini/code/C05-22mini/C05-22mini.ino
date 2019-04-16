@@ -14,10 +14,15 @@
 
 // Comment the following line if the whole hardware is available (Clock In, Out, Speed control).
 // #define MINIMAL_HARDWARE
-// Comment the following line to disable servo output and have a standard pulse instead.
+ 
+// Comment the following line to disable servo output and have a standard pulse instead (15ms), to control another type of motors (DC Motor, 5v Fan, Waterpump, vibrator, etc)
+// Comenta la siguiente linea si quieres que tenga salida de pulso (15ms)  para controlar otro tipo de motores
 #define SERVO_OUTPUT
+
 // This setting optionally inverts the output when SERVO_OUTPUT is not defined
-// #define INVERTED_OUTPUT
+// Si está comentada, la salida es normalmente alta
+#define INVERTED_OUTPUT
+
 // Uncomment the following line for a 22 mini
 #define _22_MINI
 
@@ -38,8 +43,8 @@ const byte TOTAL_TRACKS           = 4;
 #endif
 
 const byte TOTAL_STEP_COLS        = TOTAL_STEPS/2;
-const int  MIN_STEP_TIME          = 100;
-const int  MAX_STEP_TIME          = 1000;
+const int  MIN_STEP_TIME          = 100; //MAX BPM (in ms)
+const int  MAX_STEP_TIME          = 1000;//MIN BPM (in ms)
 const int  RESET_PRESS_TIME       = 1000;
 const byte CLK_SIGNAL_TIME        = 15;
 
@@ -49,6 +54,8 @@ const byte SERVO_START_ANGLE       = 5; // Never set to 0. May be outside of the
 const byte SERVO_DELAY            = 50;
 const byte SERVO_UPDATE_INT       = 10;
 const byte SERVO_INCREMENT        = 4;
+//Last 2 values change the beat velocity
+//Ultimos dos valores dictan la velocidad del golpe
 #endif
 
 // Pin mapping ----------------------
