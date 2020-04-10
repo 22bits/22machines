@@ -35,7 +35,7 @@
 const byte TOTAL_BUTTONS          = 8; // Connected to 4021
 const byte TOTAL_STEPS            = 8;
 const byte TOTAL_TRACKS           = 2;
-const byte LED_MATRIX_BRIGHTNESS  = 1;
+const byte LED_MATRIX_BRIGHTNESS  = 0;
 #else
 const byte TOTAL_BUTTONS          = 16;
 const byte TOTAL_STEPS            = 16;
